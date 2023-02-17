@@ -18,7 +18,7 @@
         <div>
           <button
             id="hamburger-button"
-            class="text-3xl cursor-pointer md:hidden"
+            class="cursor-pointer text-3xl md:hidden"
           >
             &#9776;
           </button>
@@ -34,7 +34,7 @@
         id="mobile-menu"
         class="top-68 justify-content-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl"
       >
-        <button class="text-8xl self-end px-6">&times;</button>
+        <button class="self-end px-6 text-8xl">&times;</button>
         <nav
           class="flex min-h-screen flex-col items-center py-8"
           aria-label="mobile"
@@ -61,7 +61,7 @@
     <main class="mx-auto max-w-4xl">
       <section
         id="hero"
-        class="mb-12 flex flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row scroll-mt-40 widescreen:section-min-height tallscreen:section-min-height"
+        class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
       >
         <article class="sm:w-1/2">
           <h2
@@ -90,7 +90,7 @@
 
       <section
         id="videos"
-        class="my-12 scroll-mt-20 p-6 widescreen:section-min-height tallscreen:section-min-height"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
       >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
@@ -101,46 +101,46 @@
           class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row"
         >
           <li
-            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-yellow-700 bg-white dark:bg-black dark:border-gray-100 py-6 px-2 shadow-xl sm:w-5/6"
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-yellow-700 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
           >
             <img src="./img/radio.svg" alt="Radio" class="mb-6 w-1/2" />
-            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
               Community
             </h3>
             <p
-              class="hidden sm:block text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
             >
               Communitarian production
             </p>
           </li>
           <li
-            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-yellow-700 bg-white dark:bg-black dark:border-gray-100 py-6 px-2 shadow-xl sm:w-5/6"
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-yellow-700 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
           >
             <img
               src="./img/collaborate.svg"
               alt="Collaborate"
-              class="w-1/2 mb-6"
+              class="mb-6 w-1/2"
             />
-            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
               Documentaries
             </h3>
 
             <p
-              class="hidden sm:block text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
             >
               Hot topics
             </p>
           </li>
           <li
-            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-yellow-700 bg-white dark:bg-black dark:border-gray-100 py-6 px-2 shadow-xl sm:w-5/6"
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-yellow-700 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6"
           >
-            <img src="./img/video.svg" alt="Videoclip" class="w-1/2 mb-6" />
-            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+            <img src="./img/video.svg" alt="Videoclip" class="mb-6 w-1/2" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
               Videoclips
             </h3>
 
             <p
-              class="hidden sm:block text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+              class="mt-2 hidden text-center text-2xl text-slate-500 dark:text-slate-400 sm:block"
             >
               Independent artists
             </p>
@@ -152,7 +152,7 @@
 
       <section
         id="workshops"
-        class="my-12 p-6 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height"
+        class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
       >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
@@ -161,10 +161,10 @@
         </h2>
         <figure class="my-12">
           <blockquote
-            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
           >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
             >
               La comunicació i l'educació són dos dels instruments primordials
               d'integració en el nostre segle. El domini de les claus
@@ -173,17 +173,17 @@
             </p>
           </blockquote>
           <figcaption
-            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
           >
             &#8212;La nostra missió
           </figcaption>
         </figure>
         <figure class="my-12">
           <blockquote
-            class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
+            class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black"
           >
             <p
-              class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2"
+              class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl"
             >
               Fomentar l'adquisició d'una conciència social crítica davant la
               realitat mediàtica que ens envolta. Contribuir a la incorporació
@@ -194,7 +194,7 @@
             </p>
           </blockquote>
           <figcaption
-            class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
+            class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl"
           >
             &#8212;Els nostres objectius
           </figcaption>
@@ -205,7 +205,7 @@
 
       <section
         id="contact"
-        class="m-12 p-6 scroll-mt-16 widescreen:section-min-height tallscreen:section-min-height"
+        class="widescreen:section-min-height tallscreen:section-min-height m-12 scroll-mt-16 p-6"
       >
         <h2
           class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
@@ -214,7 +214,7 @@
         </h2>
         <form
           action=""
-          class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4"
+          class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl"
         >
           <label for="subject">Topic:</label>
           <input
@@ -225,7 +225,7 @@
             minlength="3"
             maxlength="60"
             placeholder="Your topic"
-            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
           />
           <label for="message">Message:</label>
           <textarea
@@ -235,10 +235,10 @@
             rows="10"
             placeholder="Your Message"
             required
-            class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"
+            class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"
           ></textarea>
           <button
-            class="bg-yellow-700 hover:bg-yellow-600 active:bg-yellow-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none"
+            class="w-48 rounded-xl border border-solid border-slate-900 bg-yellow-700 p-3 text-white hover:bg-yellow-600 active:bg-yellow-500 dark:border-none"
           >
             Send
           </button>
@@ -246,9 +246,9 @@
       </section>
     </main>
 
-    <footer id="footer" class="bg-yellow-700 text-white text-xl">
+    <footer id="footer" class="bg-yellow-700 text-xl text-white">
       <section
-        class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between"
+        class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between"
       >
         <address>
           <h2>Video Duka. Education & Comunnication, SCP</h2>
@@ -259,7 +259,7 @@
           ><br />
           Tel: <a href="tel:+15555555555">(555) 555-5555</a>
         </address>
-        <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+        <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
           <a href="#videos" class="hover:opacity-90">Videos</a>
           <a href="#workshops" class="hover:opacity-90">Workshops</a>
           <a href="#contact" class="hover:opacity-90">Contact</a>
