@@ -9,19 +9,19 @@
   </head>
 
   <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
-    <header class="bg-yellow-700 text-white sticky top-0 z-10">
-      <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+    <header class="sticky top-0 z-10 bg-yellow-700 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
         <h1 class="text-3xl font-medium">
           <a href="#hero">📹 Video Duka</a>
         </h1>
         <div>
           <button
             id="mobile-open-button"
-            class="text-3xl sm:hidden focus:outline-none"
+            class="text-3xl focus:outline-none sm:hidden"
           >
             &#9776;
           </button>
-          <nav class="hidden sm:block space-x-8 text-xl" aria-label="main">
+          <nav class="hidden space-x-8 text-xl sm:block" aria-label="main">
             <a href="#videos" class="hover:opacity-90">Videos</a>
             <a href="#workshops" class="hover:opacity-90">Workshops</a>
             <a href="#contact" class="hover:opacity-90">Contact</a>
@@ -30,14 +30,14 @@
       </section>
     </header>
 
-    <main class="max-w-4xl mx-auto">
+    <main class="mx-auto max-w-4xl">
       <section
         id="hero"
-        class="flex flex-col-reverse justify-center sm:flex-row p-6 items-center gap-8 mb-12"
+        class="mb-12 flex flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
       >
         <article class="sm:w-1/2">
           <h2
-            class="max-w-md text-4xl font-bold text-center sm:text-5xl sm:text-left text-slate-900 dark:text-white"
+            class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl"
           >
             We make
             <span class="text-indigo-700 dark:text-indigo-300"
@@ -46,93 +46,92 @@
             together!
           </h2>
           <p
-            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
           >
             From all neighborhoods, diverse and inclusive...
           </p>
           <p
-            class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400"
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left"
           >
             Check them out!
           </p>
         </article>
-        <img class="w-1/2" src="./img/video.svg" alt="Video Duka" />
+        <img class="w-1/2" src="./img/study.svg" alt="Study" />
       </section>
-      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="videos" class="p-6 my-12 scroll-mt-20">
+      <section id="videos" class="my-12 scroll-mt-20 p-6">
         <h2
-          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
           Videos
         </h2>
         <ul
-          class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8"
+          class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row"
         >
           <li
-            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-orange-700 dark:border-gray-100 bg-white py-6 px-2 rounded-3xl shadow-xl"
+            class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-gray-100 bg-white dark:bg-black py-6 px-2 shadow-xl dark:border-orange-700 sm:w-5/6"
           >
-            <!-- 
+            <img src="./img/radio.svg" alt="Radio" class="mb-6 w-1/2" />
             <h3 class="text-3xl text-center text-slate-900 dark:text-white">
               Community
             </h3>
             <p
-              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+              class="hidden sm:block text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
             >
               Communitarian production
-            </p> -->
-            <img src="./img/radio.svg" alt="Radio" class="w-1/2 mb-6" />
-          </li>
-          <!--  <li
-            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
-          >
-            <!--   <img src="./img/study.svg" alt="Study" class="w-1/2 mb-6" />
-            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
-              Documentaries
-            </h3>
-
-            <p
-              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
-            >
-              Documenting hot topics
-            </p> 
+            </p>
           </li>
           <li
-            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-orange-700 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
           >
-            <!--  <img
+            <img
               src="./img/collaborate.svg"
               alt="Collaborate"
               class="w-1/2 mb-6"
             />
             <h3 class="text-3xl text-center text-slate-900 dark:text-white">
+              Documentaries
+            </h3>
+
+            <p
+              class="hidden sm:block text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+            >
+              Hot topics
+            </p>
+          </li>
+          <li
+            class="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-orange-700 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl"
+          >
+            <img src="./img/video.svg" alt="Videogame" class="w-1/2 mb-6" />
+            <h3 class="text-3xl text-center text-slate-900 dark:text-white">
               Videoclips
             </h3>
 
             <p
-              class="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
+              class="hidden sm:block text-2xl text-center mt-2 text-slate-500 dark:text-slate-400"
             >
-              Luxury Starship
-            </p> 
-          </li> -->
+              Independent artists
+            </p>
+          </li>
         </ul>
       </section>
 
-      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="workshops" class="p-6 my-12">
+      <section id="workshops" class="my-12 p-6">
         <h2
-          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
           Workshops
         </h2>
       </section>
 
-      <hr class="mx-auto bg-black dark:bg-white w-1/2" />
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-      <section id="contact" class="p-6 my-12">
+      <section id="contact" class="my-12 p-6">
         <h2
-          class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white"
+          class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl"
         >
           Contact
         </h2>
